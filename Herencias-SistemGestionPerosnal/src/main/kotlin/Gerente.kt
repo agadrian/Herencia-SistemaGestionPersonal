@@ -35,7 +35,7 @@ class Gerente(nombre: String, edad: Int, salarioBase: Double, porcentajeImpuesto
         //TODO Si lo pongo como el comentado, me muestra el toString de la clAse padre, por lo que no se muestra con los nuevos datos del salario
         //return "${super.toString()}; Bonus: $bonus; Exento Impuestos?: $exentoImpuestos"
 
-        return "Nombre: ${this.nombre}; Edad: ${this.edad}; Salario: ${calcularSalario()}; Bonus: $bonus; Exento Impuestos?: $exentoImpuestos"
+        return "Nombre: ${this.nombre}; Edad: ${this.edad}; Salario: ${"%.2f".format(calcularSalario())}; Bonus: $bonus; Exento Impuestos?: $exentoImpuestos"
     }
 
     /**

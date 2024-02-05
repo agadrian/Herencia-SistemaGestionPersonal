@@ -2,7 +2,7 @@
 
 fun main() {
     val persona1 = Persona("Juan", 21)
-    val empleado1 = Empleado("Ana", 30, 1500)
+    val empleado1 = Empleado("Ana", 30, 1500, 10)
     val gerente1 = Gerente("Francisco", 50, 1000, 20, 200.0, false)
     val gerente2 = Gerente("Francisquito", 50, 1000, 20, 200.0, true)
 

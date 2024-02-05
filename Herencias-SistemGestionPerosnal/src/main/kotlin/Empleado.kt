@@ -12,7 +12,7 @@ open class Empleado(nombre: String, edad: Int, val salarioBase: Double, open val
      * @param porcentajeImpuestos El porcentaje de impuestos aplicado al salario.
      */
     // Permitimos aceptar valores Int en las 2 ultimas variables tambien, y delegamos al contructor primario como .toDouble()
-    constructor(nombre: String, edad: Int, salarioBase: Int, porcentajeImpuestos: Int = 10): this(nombre, edad, salarioBase.toDouble(), porcentajeImpuestos.toDouble()){
+    constructor(nombre: String, edad: Int, salarioBase: Int, porcentajeImpuestos: Int): this(nombre, edad, salarioBase.toDouble(), porcentajeImpuestos.toDouble()){
     }
 
     private val salario : Double
